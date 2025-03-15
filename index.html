@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <!-- title -->
+    <h1>thẻ h1 quan trọng nhất (1 trang nên chỉ có 1 thẻ h6 hẻ h1)</h1>
+    <div class="header">header</div>
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3
+        <div class="box box4">4</div>
+    </div>
+    <hr>
+
+    <!-- paragraphs -->
+    <p><b>thẻ b in đậm (bould)</b></p>
+    <p><i>thẻ i in nghiêng (italic)</i></p>
+    <p>thẻ sub (chỉ số ở dưới) <br>vd: h<sub>2</sub>o</p>
+    <p>thẻ sup (chỉ số ở trên) <br>vd: x<sup>2</sup></p>
+    <p>thẻ del (delete) <del>gạch ngang (thường áp dụng giảm giá)</del></p>
+    <p>thẻ img (ảnh) <img src="/BE/images/Buoc-11-Thanh-pham-11-7068-1681636164.jpg" alt="bún chả"></p>
+    <p>thuộc tính target="_self" mở tại trang hiện tại</p><a href="https://www.google.com.vn/search?q=b%C3%BAn+ch%E1%BA%A3&udm=2#vhid=_TyniM4oLfG4bM&vssid=mosaic" target="_self">link</a>
+    <p>thuộc tính target="_blank" mở tại trang mới</p><a href="https://www.google.com.vn/search?q=b%C3%BAn+ch%E1%BA%A3&udm=2#vhid=_TyniM4oLfG4bM&vssid=mosaic" target="_blank">link</a>
+    <p>thẻ video (attribute: controls "thanh điều khiển", loop "lặp lại", autoplay "tự động phát", muted "tắt tiếng")</p>
+    <video width="100%" height="auto" controls>
+        <source src="/BE/videos/thecdi.ca - Bún Chả Hà Nội - DỄ LÀM - Đặc Biệt Thơm Ngon (360p).mp4" type="video/mp4">
+    </video>
+    <p>thẻ audio (attribute: controls "thanh điều khiển", loop "lặp lại", autoplay "tự động phát", muted "tắt tiếng")</p>
+    <audio controls>
+        <source src="/BE/audios/thecdi.ca - ERIK - Dù cho tận thế (vẫn yêu em) Official MV Valentine 2025 (64 KBps).mp3" type="audio/mpeg">
+    </audio>
+    <hr>
+    
+    <!-- table -->
+    <p>thẻ table (tr: hàng, td: cột, th: tiêu đề cột), attribute rowspan: xoá cột, colspan: xoá hàng. Viết tắt: <b>tr*2>td*3</b></p>
+    <table>
+        <thead>
+            <tr>
+                <th>hàng 1 cột 1</th>
+                <th>hàng 1 cột 2</th>
+                <th>hàng 1 cột 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">hàng 2 cột 1</td>
+                <td colspan="2">hàng 2 cột 2</td>
+            </tr>
+            <tr>
+                <td>hàng 3 cột 2</td>
+                <td>hàng 3 cột 3</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>thẻ ul: dấu chấm (không sắp xếp "unorder list"), thẻ li: 1 item trong danh sách</p>
+    <ul>
+        <li>a</li>
+        <li>b</li>
+    </ul>
+    <p>thẻ ol: số (sắp xếp "order list), type (1: mặc định, A: viết hoa, a: viết thường, I: la mã hoa, i: la mã thường)</p>
+    <ol type="1">
+        <li>a</li>
+        <li>b</li>
+    </ol>
+    <hr>
+    
+    <!-- block, inline -->
+    <p class="block">thẻ dạng khối (display: block) kéo hết chiều ngang (div, h, ul, ol, li, table, inform)</p>
+    <p class="inline">thẻ trong hàng (display: inline) mặc định của phần tử, không đặt được chiều rộng, cao, padding, margin (a, b, i, img, input, lable, select, span, textarea, button)</p>
+    <p class="visibility-hidden">chỉ có thẻ a (inline) được chứa thẻ block <a href="link"><p>block</p></a></p>
+    <p class="inline-block">display: inline-block (mặc định của phần tử, đặt được chiều rộng, cao, padding, margin)</p>
+    <p class="none">display: none (không hiển thị)</p>
+    <hr>
+    
+    <!-- form -->
+    <p>form là biểu mẫu thu nhập thông tin.</p>
+    <br>
+    <p>Phương thức GET nối dữ liệu biểu mẫu vào URL theo name/value (không bảo mật, độ dài 2048 kí tự, mặc định là GET).</p> 
+    <p>Phương thức POST dự liệu không gửi lên URL (không giới hạn kích thước, sử dụng để gửi 1 tài liệu lớn)</p>
+    <p>autocomplete trình duyệt gợi ý giá trị người dùng nhập trước đó (mặc định là on)</p>
+    <p>novalidate không cần kiểm tra dữ liệu chính xác khi gửi</p>
+    <p>input hiển thị nhiều cách, phụ thuộc vào type</p>
+    <p>lable người dùng hiểu hơn element (thuộc tính for phải giống thuộc tính id của element để liên kết với nhau, name là key để khi backend có thể đọc được nó ở đâu)</p>
+    <form action="https://www.w3school.com/action_page.php" target="_blank" method="post" autocomplete="on" novalidate>
+        <p>text: đoạn văn ngắn (mặc định)</p>
+        <label for="fullName">Họ tên</label>
+        <input type="text" id="fullName" name="fullName">
+        <br>
+        <p>email: nhập email</p>
+        <label for="email">email</label>
+        <input type="email" name="email" id="email">
+        <br>
+        <p>password: nhập mật khẩu</p>
+        <label for="password">mật khẩu</label>
+        <input type="password" name="password" id="password">
+        <br>
+        <p>number: nhập số</p>
+        <label for="number">số</label>
+        <input type="number" name="number" id="number">
+        <br>
+        <p>date: ngày/tháng/năm</p>
+        <label for="date">ngày tháng năm sinh</label>
+        <input type="date" name="date" id="date">
+        <br>
+        <p>time: giờ và phút</p>
+        <label for="time">giờ và phút</label>
+        <input type="time" name="time" id="time">
+        <br>
+        <p>datetimelocal: kết hợp giữa date và time</p>
+        <label for="datetimelocal">ngày giờ</label>
+        <input type="datetime-local" name="datetimelocal" id="datetimelocal">
+        <br>
+        <p>file: tải file</p>
+        <label for="file">file</label>
+        <input type="file" name="file" id="file">
+        <br>
+        <p>checkbox: chọn nhiều tuỳ chọn</p>
+        <label for="a">a</label>
+        <input type="checkbox" name="checkbox" id="a">
+        <label for="b">b</label>
+        <input type="checkbox" name="checkbox" id="b">
+        <p>radio: chỉ chọn 1</p>
+        <label for="a">a</label>
+        <input type="radio" name="radio" id="a">
+        <label for="b">b</label>
+        <input type="radio" name="radio" id="b">
+    </form>
+    <p>select hiển thị danh sách thả xuống (dropdown), các tuỳ chọn người dùng có thể chọn, thay đổi mặc định thêm thuộc tính selected vào option</p>
+    <label for="color">màu sắc</label>
+    <select name="color" id="color">
+        <option value="white">white</option>
+        <option value="black" selected> black</option>
+    </select>
+    <p>texterea để nhập nhiều dòng</p>
+    <label for="note">ghi chú</label>
+    <textarea name="note" id="note"></textarea>
+    <br>
+    <i class="fa-solid fa-house">icon</i>
+</body>
+</html>

@@ -1,0 +1,107 @@
+/*
+ id chỉ 1 
+ class cho nhiều element (nên sử dụng) 
+ * chọn cho tất cả
+ */
+
+ /* 
+ pading: giữa content và boder
+ boder: bao quanh padding và content
+ margin: khoảng cách giữa các element
+ */
+
+table, th, td {
+    /* solid: dường viền liền, dotted: đường viền chấm, dashed: dường viền nét đứt */
+    border: 1px solid #BE8C43;
+    background: #576D1B;
+    margin: 50px;
+    /* text-align (center: căn giữa, left: cản trái, right: căn phải, justify: căn đều 2 bên) */
+    text-align: center;
+    /* font-family: font chữ */
+    font-family: 'Times New Roman', Times, serif;
+    /* font-style (nomal: thường, italic: nghiêng) */
+    font-style: italic;
+    /* font-weight độ dày của chữ */
+    font-weight: 300;
+    /* font-size kích cỡ chữ */
+    font-size: 17px;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th {
+    /* text-transform (uppercase: viết hoa, lowercase: viết thường, capitalize: viết hoa chữ cái đầu */
+    text-transform: uppercase;
+}
+
+/* block, none (không chiếm diện tích) */
+.block {
+    display: block;
+    border: 1px solid #576D1B;
+}
+
+/* inline */
+.inline {
+    display: inline;
+    border: 1px solid #576D1B;
+}
+
+/* inline-block */
+.inline-block {
+    display: inline-block;
+    border: 1px solid #576D1B;
+    padding: 20px;
+}
+
+/* visibility: hidden (ẩn nhưng vẫn chiếm diện tích phần từ có), visibility: visible (hiện mặc định) */
+.visibility-hidden {
+    visibility: visible;
+}
+
+/* position static: tĩnh, mặc định*/
+.box {
+    background: gray;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    position: static;
+    /* margin-top: 100px; */
+    z-index: 0;
+}
+
+/*    relative: tương đối, căn chỉnh vị trí theo ban đầu của nó (sử dụng top, bottom, right, left) */
+.box2 {
+    background: #576D1B;
+    position: relative;
+    bottom: 10px;
+}
+
+/* absolute: tuyệt đối, căn chỉnh theo lớp cha */
+.box3 {
+    position: relative;
+}
+
+.box4 {
+    background: #BE8C43;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* fixed: cố định 1 vị trí */
+/* sticky chưa đến nó là relative đến nó là fixed */    
+.header {
+    position: sticky;
+    background: blue;
+    width: 100%;
+    padding: 20px;
+    /* z-index nào cao hơn sẽ hiện lên đầu */
+    z-index: 100;
+    top: 0;
+}
+
